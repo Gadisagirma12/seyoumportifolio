@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+        .owl-carousel {
+            margin-top: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Programmer Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home" class="container text-center mt-5">
+    <h1>Welcome to Programmer Portfolio</h1>
+    <p class="lead">Showcasing the work of talented programmers</p>
+</div>
+
+<div id="about" class="container text-center mt-5">
+    <h2>About Us</h2>
+    <p>We are a team of passionate programmers dedicated to delivering high-quality software solutions.</p>
+</div>
+
+<div id="portfolio" class="container text-center mt-5">
+    <h2>Portfolio</h2>
+    <!-- Portfolio content here -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="portfolio1.jpg" class="card-img-top" alt="Portfolio 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Description of Project 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="portfolio2.jpg" class="card-img-top" alt="Portfolio 2">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Description of Project 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="portfolio3.jpg" class="card-img-top" alt="Portfolio 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">Description of Project 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="testimonials" class="container text-center mt-5">
+    <h2>Testimonials</h2>
+    <!-- Testimonials content here -->
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <p>"Amazing work! Highly recommended!"</p>
+            <p>- Client 1</p>
+        </div>
+        <div class="item">
+            <p>"Excellent service and top-notch quality!"</p>
+            <p>- Client 2</p>
+        </div>
+        <div class="item">
+            <p>"The team exceeded our expectations. Great job!"</p>
+            <p>- Client 3</p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="container text-center mt-5">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any inquiries or project collaborations.</p>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+
+<div id="map" class="container text-center mt-5" style="height: 400px;"></div>
+
+<div class="footer mt-5">
+    <p>&copy; 2024 Programmer Portfolio. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+    });
+</script>
+<script>
+    function initMap() {
+        // Specify the coordinates for the center of the map
+        var myLatLng
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
